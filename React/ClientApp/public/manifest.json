@@ -1,6 +1,6 @@
 {
-  "short_name": "React",
-  "name": "React",
+  "short_name": "LoveCounter",
+  "name": "LoveCounter",
   "icons": [
     {
       "src": "favicon.ico",

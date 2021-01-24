@@ -15,7 +15,6 @@ export const actionCreators = {
     const response = await fetch(url);
     const forecasts = await response.json();
     console.log(forecasts)
-    console.log(response)
 
     dispatch({ type: receiveWeatherForecastsType, startDateIndex, forecasts });
   }

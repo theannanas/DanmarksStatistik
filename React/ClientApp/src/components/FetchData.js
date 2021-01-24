@@ -20,8 +20,8 @@ class FetchData extends Component {
   render() {
     return (
       <div>
-        <h1>Weather forecast</h1>
-        <p>This component demonstrates fetching data from the server and working with URL parameters.</p>
+        <h1>Tilgængelige tabeller</h1>
+        <p>Liste af alle tilgængelige tabeller fra Danmarks Statistik</p>
         {renderForecastsTable(this.props)}
         {renderPagination(this.props)}
       </div>
@@ -34,19 +34,19 @@ function renderForecastsTable(props) {
     <table className='table'>
       <thead>
         <tr>
-          <th>Date</th>
-          <th>Temp. (C)</th>
-          <th>Temp. (F)</th>
-          <th>Summary</th>
+          <th>Id</th>
+          <th>Text</th>
+          <th>Unit</th>
+          <th>Active</th>
         </tr>
       </thead>
       <tbody>
         {props.forecasts.map(forecast =>
-          <tr key={forecast.dateFormatted}>
-            <td>{forecast.dateFormatted}</td>
-            <td>{forecast.temperatureC}</td>
-            <td>{forecast.temperatureF}</td>
-            <td>{forecast.summary}</td>
+          <tr key={forecast.id}>
+            <td>{forecast.id}</td>
+            <td>{forecast.text}</td>
+            <td>{forecast.unit}</td>
+            <td>{forecast.active.toString()}</td>
           </tr>
         )}
       </tbody>
