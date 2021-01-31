@@ -1,0 +1,18 @@
+﻿body {
+    background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 70%) fixed;
+    color: white;
+    text-align: center;
+}
+
+.MuiRadio-root {
+    color: rgb(255 255 255);
+}
+
+.MuiFormLabel-root {
+    color: rgb(255 255 255);
+    font-size: inherit;
+}
+
+#select {
+    width: 60%;
+}

@@ -1,17 +1,25 @@
 ﻿import React from 'react';
 import logo from '../images/android-chrome-192x192.png';
-import {Col, Row} from "react-bootstrap"; // Tell webpack this JS file uses this image
+import Grid from "@material-ui/core/Grid";
 
 function Header() {
     return (
-        <Row>
-            <Col sm={3}>
+        <Grid container
+              spacing={3}
+              direction="row"
+              justify="center"
+              alignItems="center">
+            <Grid item>
                 <img src={logo} alt="Logo" width={50} />
-            </Col>
-            <Col sm={9}>
-                <h1>LoveCounter</h1>
-            </Col>
-        </Row>
+            </Grid>
+            <Grid item>
+                <h1>Love counter</h1>
+                <p>An estimate of your possible love matches</p>
+            </Grid>
+            <Grid item>
+                <img src={logo} alt="Logo" width={50} />
+            </Grid>
+        </Grid>
     );
 }
 
