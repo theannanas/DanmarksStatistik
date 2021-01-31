@@ -16,3 +16,9 @@
 #select {
     width: 60%;
 }
+
+.PrivateValueLabel-label-16 {
+    color: deeppink !important;
+    font-weight: bold;
+    font-size: 1rem;
+}

@@ -8,6 +8,8 @@ import Checkbox from "@material-ui/core/Checkbox";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import Radio from "@material-ui/core/Radio";
 import MunicipalitySelect from "./MunicipalitySelect";
+import AgeRangePicker from "./AgeRangePicker";
+import Typography from "@material-ui/core/Typography";
 
 
 function Form() {
@@ -19,7 +21,9 @@ function Form() {
               spacing={5}>
             <Grid item>
                 <FormControl component="fieldset">
-                    <FormLabel component="legend">Select your gender</FormLabel>
+                    <Typography gutterBottom>
+                        Select your gender
+                    </Typography>
                     <RadioGroup row aria-label="gender" name="gender1">
                         <FormControlLabel value="female" control={<Radio/>} label="Female"/>
                         <FormControlLabel value="male" control={<Radio/>} label="Male"/>
@@ -29,7 +33,9 @@ function Form() {
             </Grid>
             <Grid item>
                 <FormControl component="fieldset">
-                    <FormLabel component="legend">Select what you're looking for</FormLabel>
+                    <Typography gutterBottom>
+                        Select what you're looking for
+                    </Typography>
                     <FormGroup row>
                         <FormControlLabel
                             control={<Checkbox name="Female"/>}
@@ -45,6 +51,9 @@ function Form() {
                         />
                     </FormGroup>
                 </FormControl>
+            </Grid>
+            <Grid item>
+                <AgeRangePicker/>
             </Grid>
             <Grid item id="select">
                 <MunicipalitySelect/>
