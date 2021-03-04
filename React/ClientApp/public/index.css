@@ -22,3 +22,18 @@
     font-weight: bold;
     font-size: 1rem;
 }
+
+#ageRoot {
+    width: 300px;
+    color: white;
+}
+
+#ageSlider {
+    color: white;
+}
+
+.PrivateValueLabel-label-13 {
+    color: deeppink !important;
+    font-size: small;
+    font-weight: 500;
+}

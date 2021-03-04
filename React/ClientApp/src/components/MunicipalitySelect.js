@@ -2,9 +2,8 @@
 import Select from 'react-select'
 import municipalityData from '../staticData/MunicipalityData.json'
 import chroma from 'chroma-js';
-import {red, pink} from "@material-ui/core/colors";
+import { pink} from "@material-ui/core/colors";
 import Typography from "@material-ui/core/Typography";
-import FormControl from "@material-ui/core/FormControl";
 
 const customStyles = {
     color: pink[900],
@@ -62,7 +61,6 @@ const customStyles = {
 }
 
 const options = [municipalityData][0].map((data) => {
-    console.log(data)
     return {value: data.MunicipalityId, label: data.Municipality}
 })
 
@@ -70,7 +68,7 @@ export default function MultipleSelect() {
     return (
         <div>
             <Typography gutterBottom>
-                Select the municipalities youre looking in
+                Select the municipalities you're looking in
             </Typography><Select options={options}
                                  closeMenuOnSelect={false}
                                  isMulti

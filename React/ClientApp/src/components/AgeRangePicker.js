@@ -30,10 +30,11 @@ function valuetext(value) {
     return `${value} years`;
 }
 
-export default function AgeRangePicker() {
+export default function AgeRangePicker(state) {
     const classes = useStyles();
-    const [value, setValue] = React.useState([25, 35]);
 
+    const [value, setValue] = React.useState([parseInt(state.state.ageStart), parseInt(state.state.ageEnd)]);
+    
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
@@ -45,7 +46,6 @@ export default function AgeRangePicker() {
             </Typography>
             <Slider
                 className={classes.slider}
-                valueL
                 value={value}
                 onChange={handleChange}
                 aria-labelledby="range-slider"

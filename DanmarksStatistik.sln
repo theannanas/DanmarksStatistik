@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "React", "React\React.csproj", "{E4E92042-DE4F-4EDE-8D54-028391694A7E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{0E0C0519-B6FD-4596-BD8A-094BDFD233F6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{E4E92042-DE4F-4EDE-8D54-028391694A7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4E92042-DE4F-4EDE-8D54-028391694A7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4E92042-DE4F-4EDE-8D54-028391694A7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E0C0519-B6FD-4596-BD8A-094BDFD233F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E0C0519-B6FD-4596-BD8A-094BDFD233F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E0C0519-B6FD-4596-BD8A-094BDFD233F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E0C0519-B6FD-4596-BD8A-094BDFD233F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
